@@ -5,7 +5,7 @@
 [![Build Status](https://github.com/JamesWoolfenden/terraform-aws-sns/workflows/Verify%20and%20Bump/badge.svg?branch=master)](https://github.com/JamesWoolfenden/terraform-aws-sns)
 [![Latest Release](https://img.shields.io/github/release/JamesWoolfenden/terraform-aws-sns.svg)](https://github.com/JamesWoolfenden/terraform-aws-sns/releases/latest)
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
-[![pre-commit](https://img.shields.io/badge/checkov-verified-brightgreen)](https://www.checkov.io/)
+[![checkov](https://img.shields.io/badge/checkov-verified-brightgreen)](https://www.checkov.io/)
 
 Terraform module -
 
@@ -28,7 +28,31 @@ module "sns" {
 The example in the **examplea** folder shows how to pass your own policy in when creating your key.
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
-Error: no lines in file
+## Requirements
+
+No requirements.
+
+## Providers
+
+| Name | Version |
+|------|---------|
+| aws | n/a |
+
+## Inputs
+
+| Name | Description | Type | Default | Required |
+|------|-------------|------|---------|:--------:|
+| common\_tags | This is to help you add tags to your cloud objects | `map` | n/a | yes |
+| delivery\_policy | A policy definition | `string` | `""` | no |
+| kms\_master\_key\_id | The kms key to use | `string` | `"alias/aws/sns"` | no |
+| topic\_name | The name of the Topic | `string` | `"my first topic"` | no |
+
+## Outputs
+
+| Name | Description |
+|------|-------------|
+| sns | n/a |
+
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
 ## Related Projects
