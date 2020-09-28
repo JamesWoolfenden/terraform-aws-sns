@@ -26,7 +26,6 @@ module "sns" {
 The example in the **examplea** folder shows how to pass your own policy in when creating your key.
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
-
 ## Requirements
 
 No requirements.
@@ -34,23 +33,23 @@ No requirements.
 ## Providers
 
 | Name | Version |
-| ---- | ------- |
-| aws  | n/a     |
+|------|---------|
+| aws | n/a |
 
 ## Inputs
 
-| Name              | Description                                        | Type     | Default            | Required |
-| ----------------- | -------------------------------------------------- | -------- | ------------------ | :------: |
-| common_tags       | This is to help you add tags to your cloud objects | `map`    | n/a                |   yes    |
-| delivery_policy   | A policy definition                                | `string` | `""`               |    no    |
-| kms_master_key_id | The kms key to use                                 | `string` | `"alias/aws/sns"`  |    no    |
-| topic_name        | The name of the Topic                              | `string` | `"my first topic"` |    no    |
+| Name | Description | Type | Default | Required |
+|------|-------------|------|---------|:--------:|
+| common\_tags | This is to help you add tags to your cloud objects | `map` | n/a | yes |
+| delivery\_policy | A policy definition | `string` | `""` | no |
+| kms\_master\_key\_id | The kms key to use | `string` | `"alias/aws/sns"` | no |
+| topic\_name | The name of the Topic | `string` | `"my first topic"` | no |
 
 ## Outputs
 
 | Name | Description |
-| ---- | ----------- |
-| sns  | n/a         |
+|------|-------------|
+| sns | n/a |
 
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
