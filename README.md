@@ -44,7 +44,7 @@ No requirements.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| common\_tags | This is to help you add tags to your cloud objects | `map` | n/a | yes |
+| common\_tags | This is to help you add tags to your cloud objects | `map(any)` | n/a | yes |
 | delivery\_policy | A policy definition | `string` | `""` | no |
 | kms\_master\_key\_id | The kms key to use | `string` | `"alias/aws/sns"` | no |
 | topic\_name | The name of the Topic | `string` | `"my first topic"` | no |
