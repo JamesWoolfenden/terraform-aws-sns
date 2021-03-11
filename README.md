@@ -40,6 +40,16 @@ No requirements.
 |------|---------|
 | aws | n/a |
 
+## Modules
+
+No Modules.
+
+## Resources
+
+| Name |
+|------|
+| [aws_sns_topic](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/sns_topic) |
+
 ## Inputs
 
 | Name | Description | Type | Default | Required |
@@ -54,7 +64,6 @@ No requirements.
 | Name | Description |
 |------|-------------|
 | sns | n/a |
-
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
 ## Related Projects
