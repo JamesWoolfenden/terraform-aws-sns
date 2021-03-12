@@ -1,5 +1,6 @@
 common_tags = {
-"createdby" = "Terraform" }
+  "createdby" = "Terraform"
+module = "terraform-aws-sns" }
 
 
 kms_master_key_id = "alias/aws/sns"
