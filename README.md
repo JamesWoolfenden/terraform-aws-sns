@@ -54,7 +54,6 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_common_tags"></a> [common\_tags](#input\_common\_tags) | This is to help you add tags to your cloud objects | `map(any)` | n/a | yes |
 | <a name="input_delivery_policy"></a> [delivery\_policy](#input\_delivery\_policy) | A policy definition | `string` | `""` | no |
 | <a name="input_kms_master_key_id"></a> [kms\_master\_key\_id](#input\_kms\_master\_key\_id) | The kms key to use | `string` | `"alias/aws/sns"` | no |
 | <a name="input_topic_name"></a> [topic\_name](#input\_topic\_name) | The name of the Topic | `string` | `"my first topic"` | no |
