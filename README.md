@@ -38,32 +38,32 @@ No requirements.
 
 | Name | Version |
 |------|---------|
-| aws | n/a |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | n/a |
 
 ## Modules
 
-No Modules.
+No modules.
 
 ## Resources
 
-| Name |
-|------|
-| [aws_sns_topic](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/sns_topic) |
+| Name | Type |
+|------|------|
+| [aws_sns_topic.message](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/sns_topic) | resource |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| common\_tags | This is to help you add tags to your cloud objects | `map(any)` | n/a | yes |
-| delivery\_policy | A policy definition | `string` | `""` | no |
-| kms\_master\_key\_id | The kms key to use | `string` | `"alias/aws/sns"` | no |
-| topic\_name | The name of the Topic | `string` | `"my first topic"` | no |
+| <a name="input_common_tags"></a> [common\_tags](#input\_common\_tags) | This is to help you add tags to your cloud objects | `map(any)` | n/a | yes |
+| <a name="input_delivery_policy"></a> [delivery\_policy](#input\_delivery\_policy) | A policy definition | `string` | `""` | no |
+| <a name="input_kms_master_key_id"></a> [kms\_master\_key\_id](#input\_kms\_master\_key\_id) | The kms key to use | `string` | `"alias/aws/sns"` | no |
+| <a name="input_topic_name"></a> [topic\_name](#input\_topic\_name) | The name of the Topic | `string` | `"my first topic"` | no |
 
 ## Outputs
 
 | Name | Description |
 |------|-------------|
-| sns | n/a |
+| <a name="output_sns"></a> [sns](#output\_sns) | n/a |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
 ## Related Projects
