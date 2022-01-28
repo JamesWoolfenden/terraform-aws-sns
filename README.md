@@ -30,15 +30,16 @@ module "sns" {
 The example in the **examplea** folder shows how to pass your own policy in when creating your key.
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+
 ## Requirements
 
 No requirements.
 
 ## Providers
 
-| Name | Version |
-|------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | n/a |
+| Name                                             | Version |
+| ------------------------------------------------ | ------- |
+| <a name="provider_aws"></a> [aws](#provider_aws) | n/a     |
 
 ## Modules
 
@@ -46,23 +47,24 @@ No modules.
 
 ## Resources
 
-| Name | Type |
-|------|------|
+| Name                                                                                                           | Type     |
+| -------------------------------------------------------------------------------------------------------------- | -------- |
 | [aws_sns_topic.message](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/sns_topic) | resource |
 
 ## Inputs
 
-| Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:--------:|
-| <a name="input_delivery_policy"></a> [delivery\_policy](#input\_delivery\_policy) | A policy definition | `string` | `""` | no |
-| <a name="input_kms_master_key_id"></a> [kms\_master\_key\_id](#input\_kms\_master\_key\_id) | The kms key to use | `string` | `"alias/aws/sns"` | no |
-| <a name="input_topic_name"></a> [topic\_name](#input\_topic\_name) | The name of the Topic | `string` | `"my first topic"` | no |
+| Name                                                                                 | Description           | Type     | Default            | Required |
+| ------------------------------------------------------------------------------------ | --------------------- | -------- | ------------------ | :------: |
+| <a name="input_delivery_policy"></a> [delivery_policy](#input_delivery_policy)       | A policy definition   | `string` | `""`               |    no    |
+| <a name="input_kms_master_key_id"></a> [kms_master_key_id](#input_kms_master_key_id) | The kms key to use    | `string` | `"alias/aws/sns"`  |    no    |
+| <a name="input_topic_name"></a> [topic_name](#input_topic_name)                      | The name of the Topic | `string` | `"my first topic"` |    no    |
 
 ## Outputs
 
-| Name | Description |
-|------|-------------|
-| <a name="output_sns"></a> [sns](#output\_sns) | n/a |
+| Name                                         | Description |
+| -------------------------------------------- | ----------- |
+| <a name="output_sns"></a> [sns](#output_sns) | n/a         |
+
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
 ## Related Projects
@@ -85,7 +87,7 @@ Please use the [issue tracker](https://github.com/JamesWoolfenden/terraform-aws-
 
 ## Copyrights
 
-Copyright © 2019-2021 James Woolfenden
+Copyright © 2019-2022 James Woolfenden
 
 ## License
 
