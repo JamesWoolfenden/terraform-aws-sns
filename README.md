@@ -85,13 +85,17 @@ resource "aws_iam_policy" "terraform_pike" {
             "Sid": "VisualEditor0",
             "Effect": "Allow",
             "Action": [
-                "SNS:CreateTopic",
-                "SNS:DeleteTopic",
-                "SNS:GetTopicAttributes",
-                "SNS:ListTagsForResource",
-                "SNS:SetTopicAttributes"
+                "sns:CreateTopic",
+                "sns:DeleteTopic",
+                "sns:GetDataProtectionPolicy",
+                "sns:GetTopicAttributes",
+                "sns:ListTagsForResource",
+                "sns:PutDataProtectionPolicy",
+                "sns:SetTopicAttributes"
             ],
-            "Resource": "*"
+            "Resource": [
+                "*"
+            ]
         }
     ]
 })
